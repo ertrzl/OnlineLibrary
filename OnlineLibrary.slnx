@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/presentation/">
+    <Project Path="presentation/OnlineLibrary.ConsoleApp/OnlineLibrary.ConsoleApp.csproj" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Core/">
+    <Project Path="src/Core/OnlineLibrary.Application/OnlineLibrary.Application.csproj" />
+    <Project Path="src/Core/OnlineLibrary.Domain/OnlineLibrary.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Infrastructure/">
+    <Project Path="src/Infrastructure/OnlineLibrary.Persistence/OnlineLibrary.Persistence.csproj" />
+  </Folder>
+</Solution>
