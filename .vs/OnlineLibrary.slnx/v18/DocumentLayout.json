@@ -1,74 +1,110 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\",
+  "WorkspaceRootPath": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\src\\core\\onlinelibrary.application\\interfaces\\repositories\\iauthorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|solutionrelative:src\\core\\onlinelibrary.application\\interfaces\\repositories\\iauthorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\infrastructure\\onlinelibrary.persistence\\implementations\\services\\reserveditemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|solutionrelative:src\\infrastructure\\onlinelibrary.persistence\\implementations\\services\\reserveditemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\src\\core\\onlinelibrary.application\\interfaces\\repositories\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|solutionrelative:src\\core\\onlinelibrary.application\\interfaces\\repositories\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\src\\core\\onlinelibrary.application\\interfaces\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|solutionrelative:src\\core\\onlinelibrary.application\\interfaces\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\src\\core\\onlinelibrary.application\\interfaces\\repositories\\ireserveditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|solutionrelative:src\\core\\onlinelibrary.application\\interfaces\\repositories\\ireserveditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\src\\core\\onlinelibrary.application\\interfaces\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|solutionrelative:src\\core\\onlinelibrary.application\\interfaces\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\src\\core\\onlinelibrary.application\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|solutionrelative:src\\core\\onlinelibrary.application\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\src\\core\\onlinelibrary.application\\interfaces\\services\\ireserveditemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|solutionrelative:src\\core\\onlinelibrary.application\\interfaces\\services\\ireserveditemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\src\\core\\onlinelibrary.application\\interfaces\\services\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|solutionrelative:src\\core\\onlinelibrary.application\\interfaces\\services\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\src\\core\\onlinelibrary.domain\\entitites\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|solutionrelative:src\\core\\onlinelibrary.domain\\entitites\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\src\\core\\onlinelibrary.domain\\entitites\\reserveditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\core\\onlinelibrary.domain\\entitites\\reserveditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|solutionrelative:src\\core\\onlinelibrary.domain\\entitites\\reserveditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\src\\core\\onlinelibrary.domain\\entitites\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\infrastructure\\onlinelibrary.persistence\\implementations\\repositories\\reserveditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|solutionrelative:src\\infrastructure\\onlinelibrary.persistence\\implementations\\repositories\\reserveditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\infrastructure\\onlinelibrary.persistence\\implementations\\repositories\\generic\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|solutionrelative:src\\infrastructure\\onlinelibrary.persistence\\implementations\\repositories\\generic\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\infrastructure\\onlinelibrary.persistence\\implementations\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|solutionrelative:src\\infrastructure\\onlinelibrary.persistence\\implementations\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\core\\onlinelibrary.application\\interfaces\\services\\ireserveditemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|solutionrelative:src\\core\\onlinelibrary.application\\interfaces\\services\\ireserveditemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\infrastructure\\onlinelibrary.persistence\\implementations\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|solutionrelative:src\\infrastructure\\onlinelibrary.persistence\\implementations\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\core\\onlinelibrary.application\\interfaces\\services\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|solutionrelative:src\\core\\onlinelibrary.application\\interfaces\\services\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\infrastructure\\onlinelibrary.persistence\\implementations\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|solutionrelative:src\\infrastructure\\onlinelibrary.persistence\\implementations\\repositories\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\core\\onlinelibrary.application\\interfaces\\repositories\\iauthorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|solutionrelative:src\\core\\onlinelibrary.application\\interfaces\\repositories\\iauthorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\core\\onlinelibrary.application\\interfaces\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|solutionrelative:src\\core\\onlinelibrary.application\\interfaces\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\infrastructure\\onlinelibrary.persistence\\implementations\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|solutionrelative:src\\infrastructure\\onlinelibrary.persistence\\implementations\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\infrastructure\\onlinelibrary.persistence\\dal\\migrations\\20260703155010_initializedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|solutionrelative:src\\infrastructure\\onlinelibrary.persistence\\dal\\migrations\\20260703155010_initializedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\core\\onlinelibrary.application\\interfaces\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|solutionrelative:src\\core\\onlinelibrary.application\\interfaces\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\core\\onlinelibrary.application\\interfaces\\repositories\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|solutionrelative:src\\core\\onlinelibrary.application\\interfaces\\repositories\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\core\\onlinelibrary.application\\interfaces\\repositories\\ireserveditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|solutionrelative:src\\core\\onlinelibrary.application\\interfaces\\repositories\\ireserveditemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\infrastructure\\onlinelibrary.persistence\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|solutionrelative:src\\infrastructure\\onlinelibrary.persistence\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE6CCD9-CE34-B481-4E77-6D17A91F1B7B}|presentation\\OnlineLibrary.ConsoleApp\\OnlineLibrary.ConsoleApp.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\presentation\\onlinelibrary.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BE6CCD9-CE34-B481-4E77-6D17A91F1B7B}|presentation\\OnlineLibrary.ConsoleApp\\OnlineLibrary.ConsoleApp.csproj|solutionrelative:presentation\\onlinelibrary.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\infrastructure\\onlinelibrary.persistence\\onlinelibrary.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F2B831A2-70B2-3686-E277-02FFDC4AB636}|src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj|solutionrelative:src\\infrastructure\\onlinelibrary.persistence\\onlinelibrary.persistence.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\core\\onlinelibrary.domain\\entitites\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|solutionrelative:src\\core\\onlinelibrary.domain\\entitites\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\src\\core\\onlinelibrary.domain\\entitites\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\core\\onlinelibrary.domain\\entitites\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|solutionrelative:src\\core\\onlinelibrary.domain\\entitites\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\src\\core\\onlinelibrary.application\\onlinelibrary.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\core\\onlinelibrary.domain\\entitites\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|solutionrelative:src\\core\\onlinelibrary.domain\\entitites\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\core\\onlinelibrary.application\\onlinelibrary.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{3DE7DAEA-3D9F-02A6-D154-605DC8C612BB}|src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj|solutionrelative:src\\core\\onlinelibrary.application\\onlinelibrary.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\src\\core\\onlinelibrary.domain\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\core\\onlinelibrary.domain\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|solutionrelative:src\\core\\onlinelibrary.domain\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\src\\core\\onlinelibrary.domain\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\core\\onlinelibrary.domain\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|solutionrelative:src\\core\\onlinelibrary.domain\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\src\\core\\onlinelibrary.domain\\onlinelibrary.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|c:\\users\\ertug\\desktop\\kodlar\\onlinelibrary\\src\\core\\onlinelibrary.domain\\onlinelibrary.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{D2376A35-9760-D241-9CAB-71B81BA0B683}|src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj|solutionrelative:src\\core\\onlinelibrary.domain\\onlinelibrary.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BE6CCD9-CE34-B481-4E77-6D17A91F1B7B}|presentation\\OnlineLibrary.ConsoleApp\\OnlineLibrary.ConsoleApp.csproj|c:\\users\\ertug\\desktop\\koduklar\\onlinelibrary\\presentation\\onlinelibrary.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BE6CCD9-CE34-B481-4E77-6D17A91F1B7B}|presentation\\OnlineLibrary.ConsoleApp\\OnlineLibrary.ConsoleApp.csproj|solutionrelative:presentation\\onlinelibrary.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,106 +114,184 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BookService.cs",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Services\\BookService.cs",
-              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Application\\Services\\BookService.cs",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Services\\BookService.cs",
-              "RelativeToolTip": "src\\Core\\OnlineLibrary.Application\\Services\\BookService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ReservedItemService.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Services\\ReservedItemService.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Services\\ReservedItemService.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Services\\ReservedItemService.cs",
+              "RelativeToolTip": "src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Services\\ReservedItemService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-02T20:59:02.594Z",
+              "WhenOpened": "2026-07-03T17:26:32.341Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IReservedItemService.cs",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IReservedItemService.cs",
-              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IReservedItemService.cs",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IReservedItemService.cs",
-              "RelativeToolTip": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IReservedItemService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AuthorService.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Services\\AuthorService.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Services\\AuthorService.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Services\\AuthorService.cs",
+              "RelativeToolTip": "src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Services\\AuthorService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-02T20:48:39.557Z",
+              "WhenOpened": "2026-07-03T16:57:22.401Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "IAuthorService.cs",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IAuthorService.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IAuthorService.cs",
               "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IAuthorService.cs",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IAuthorService.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IAuthorService.cs",
               "RelativeToolTip": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IAuthorService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-02T20:48:23.773Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Repositories\\AuthorRepository.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Repositories\\AuthorRepository.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Repositories\\AuthorRepository.cs",
+              "RelativeToolTip": "src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Repositories\\AuthorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T16:23:07.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IBookService.cs",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IBookService.cs",
-              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IBookService.cs",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IBookService.cs",
-              "RelativeToolTip": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IBookService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Repositories\\BookRepository.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Repositories\\BookRepository.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Repositories\\BookRepository.cs",
+              "RelativeToolTip": "src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Repositories\\BookRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-02T20:48:14.55Z",
+              "WhenOpened": "2026-07-03T16:12:17.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IReservedItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IReservedItemRepository.cs",
-              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IReservedItemRepository.cs",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IReservedItemRepository.cs",
-              "RelativeToolTip": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IReservedItemRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ReservedItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Repositories\\ReservedItemRepository.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Repositories\\ReservedItemRepository.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Repositories\\ReservedItemRepository.cs",
+              "RelativeToolTip": "src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Repositories\\ReservedItemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-02T20:37:18.946Z",
+              "WhenOpened": "2026-07-03T16:23:54.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IBookRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IBookRepository.cs",
-              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IBookRepository.cs",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IBookRepository.cs",
-              "RelativeToolTip": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IBookRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-02T20:36:49.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "IAuthorRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IAuthorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IAuthorRepository.cs",
               "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IAuthorRepository.cs",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IAuthorRepository.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IAuthorRepository.cs",
               "RelativeToolTip": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IAuthorRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-02T20:36:33.543Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Repositories\\Generic\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Repositories\\Generic\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Repositories\\Generic\\GenericRepository.cs",
+              "RelativeToolTip": "src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Repositories\\Generic\\GenericRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T15:53:59.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReservedItem.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Entitites\\ReservedItem.cs",
+              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Domain\\Entitites\\ReservedItem.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Entitites\\ReservedItem.cs",
+              "RelativeToolTip": "src\\Core\\OnlineLibrary.Domain\\Entitites\\ReservedItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T20:28:49.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IBookService.cs",
+              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IBookService.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IBookService.cs",
+              "RelativeToolTip": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IBookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T20:48:14.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Services\\BookService.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Services\\BookService.cs",
+              "RelativeToolTip": "src\\Infrastructure\\OnlineLibrary.Persistence\\Implementations\\Services\\BookService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T16:25:55.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IReservedItemService.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IReservedItemService.cs",
+              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IReservedItemService.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IReservedItemService.cs",
+              "RelativeToolTip": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Services\\IReservedItemService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T20:48:39.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20260703155010_InitializeDB.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\DAL\\Migrations\\20260703155010_InitializeDB.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\OnlineLibrary.Persistence\\DAL\\Migrations\\20260703155010_InitializeDB.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\DAL\\Migrations\\20260703155010_InitializeDB.cs",
+              "RelativeToolTip": "src\\Infrastructure\\OnlineLibrary.Persistence\\DAL\\Migrations\\20260703155010_InitializeDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T15:50:10.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IRepository.cs",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IRepository.cs",
               "RelativeToolTip": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -186,50 +300,89 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "OnlineLibrary.Application",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj",
-              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj",
-              "RelativeToolTip": "src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj",
+              "DocumentIndex": 14,
+              "Title": "IBookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IBookRepository.cs",
+              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IBookRepository.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IBookRepository.cs",
+              "RelativeToolTip": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IBookRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T20:36:49.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IReservedItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IReservedItemRepository.cs",
+              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IReservedItemRepository.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IReservedItemRepository.cs",
+              "RelativeToolTip": "src\\Core\\OnlineLibrary.Application\\Interfaces\\Repositories\\IReservedItemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T20:37:18.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\DAL\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\OnlineLibrary.Persistence\\DAL\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\DAL\\AppDbContext.cs",
+              "RelativeToolTip": "src\\Infrastructure\\OnlineLibrary.Persistence\\DAL\\AppDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-03T15:31:23.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\presentation\\OnlineLibrary.ConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "presentation\\OnlineLibrary.ConsoleApp\\Program.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\presentation\\OnlineLibrary.ConsoleApp\\Program.cs",
+              "RelativeToolTip": "presentation\\OnlineLibrary.ConsoleApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T20:03:00.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OnlineLibrary.Persistence.csproj",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj",
+              "RelativeToolTip": "src\\Infrastructure\\OnlineLibrary.Persistence\\OnlineLibrary.Persistence.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-02T20:33:07.591Z",
+              "WhenOpened": "2026-07-03T15:06:12.76Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ReservedItem.cs",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Entitites\\ReservedItem.cs",
-              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Domain\\Entitites\\ReservedItem.cs",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Entitites\\ReservedItem.cs",
-              "RelativeToolTip": "src\\Core\\OnlineLibrary.Domain\\Entitites\\ReservedItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Entitites\\Book.cs",
+              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Domain\\Entitites\\Book.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Entitites\\Book.cs",
+              "RelativeToolTip": "src\\Core\\OnlineLibrary.Domain\\Entitites\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-02T20:28:49.804Z",
+              "WhenOpened": "2026-07-02T20:04:43.437Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Gender.cs",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Enums\\Gender.cs",
-              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Domain\\Enums\\Gender.cs",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Enums\\Gender.cs",
-              "RelativeToolTip": "src\\Core\\OnlineLibrary.Domain\\Enums\\Gender.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-02T20:25:35.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "Author.cs",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Entitites\\Author.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Entitites\\Author.cs",
               "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Domain\\Entitites\\Author.cs",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Entitites\\Author.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Entitites\\Author.cs",
               "RelativeToolTip": "src\\Core\\OnlineLibrary.Domain\\Entitites\\Author.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -238,11 +391,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 22,
+              "Title": "OnlineLibrary.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj",
+              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj",
+              "RelativeToolTip": "src\\Core\\OnlineLibrary.Application\\OnlineLibrary.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-02T20:33:07.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Gender.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Enums\\Gender.cs",
+              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Domain\\Enums\\Gender.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Enums\\Gender.cs",
+              "RelativeToolTip": "src\\Core\\OnlineLibrary.Domain\\Enums\\Gender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-02T20:25:35.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Entitites\\Common\\BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Entitites\\Common\\BaseEntity.cs",
               "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Domain\\Entitites\\Common\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Entitites\\Common\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Entitites\\Common\\BaseEntity.cs",
               "RelativeToolTip": "src\\Core\\OnlineLibrary.Domain\\Entitites\\Common\\BaseEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -251,24 +430,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Entitites\\Book.cs",
-              "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Domain\\Entitites\\Book.cs",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Entitites\\Book.cs",
-              "RelativeToolTip": "src\\Core\\OnlineLibrary.Domain\\Entitites\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-02T20:04:43.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 24,
               "Title": "Status.cs",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Enums\\Status.cs",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Enums\\Status.cs",
               "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Domain\\Enums\\Status.cs",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Enums\\Status.cs",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\Enums\\Status.cs",
               "RelativeToolTip": "src\\Core\\OnlineLibrary.Domain\\Enums\\Status.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -277,31 +443,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 25,
               "Title": "OnlineLibrary.Domain.csproj",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj",
               "RelativeDocumentMoniker": "src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj",
+              "ToolTip": "C:\\Users\\ertug\\Desktop\\Kodlar\\OnlineLibrary\\src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj",
               "RelativeToolTip": "src\\Core\\OnlineLibrary.Domain\\OnlineLibrary.Domain.csproj",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-07-02T20:04:04.514Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\presentation\\OnlineLibrary.ConsoleApp\\Program.cs",
-              "RelativeDocumentMoniker": "presentation\\OnlineLibrary.ConsoleApp\\Program.cs",
-              "ToolTip": "C:\\Users\\ertug\\Desktop\\koduklar\\OnlineLibrary\\presentation\\OnlineLibrary.ConsoleApp\\Program.cs",
-              "RelativeToolTip": "presentation\\OnlineLibrary.ConsoleApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-02T20:03:00.283Z"
+              "WhenOpened": "2026-07-02T20:04:04.514Z",
+              "EditorCaption": ""
             }
           ]
         }

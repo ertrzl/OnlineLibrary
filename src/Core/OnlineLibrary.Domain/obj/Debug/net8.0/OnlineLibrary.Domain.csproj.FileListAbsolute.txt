@@ -1,0 +1,12 @@
+C:\Users\ertug\Desktop\Kodlar\OnlineLibrary\src\Core\OnlineLibrary.Domain\bin\Debug\net8.0\OnlineLibrary.Domain.deps.json
+C:\Users\ertug\Desktop\Kodlar\OnlineLibrary\src\Core\OnlineLibrary.Domain\bin\Debug\net8.0\OnlineLibrary.Domain.dll
+C:\Users\ertug\Desktop\Kodlar\OnlineLibrary\src\Core\OnlineLibrary.Domain\bin\Debug\net8.0\OnlineLibrary.Domain.pdb
+C:\Users\ertug\Desktop\Kodlar\OnlineLibrary\src\Core\OnlineLibrary.Domain\obj\Debug\net8.0\OnlineLibrary.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ertug\Desktop\Kodlar\OnlineLibrary\src\Core\OnlineLibrary.Domain\obj\Debug\net8.0\OnlineLibrary.Domain.AssemblyInfoInputs.cache
+C:\Users\ertug\Desktop\Kodlar\OnlineLibrary\src\Core\OnlineLibrary.Domain\obj\Debug\net8.0\OnlineLibrary.Domain.AssemblyInfo.cs
+C:\Users\ertug\Desktop\Kodlar\OnlineLibrary\src\Core\OnlineLibrary.Domain\obj\Debug\net8.0\OnlineLibrary.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ertug\Desktop\Kodlar\OnlineLibrary\src\Core\OnlineLibrary.Domain\obj\Debug\net8.0\OnlineLibrary.Domain.sourcelink.json
+C:\Users\ertug\Desktop\Kodlar\OnlineLibrary\src\Core\OnlineLibrary.Domain\obj\Debug\net8.0\OnlineLibrary.Domain.dll
+C:\Users\ertug\Desktop\Kodlar\OnlineLibrary\src\Core\OnlineLibrary.Domain\obj\Debug\net8.0\refint\OnlineLibrary.Domain.dll
+C:\Users\ertug\Desktop\Kodlar\OnlineLibrary\src\Core\OnlineLibrary.Domain\obj\Debug\net8.0\OnlineLibrary.Domain.pdb
+C:\Users\ertug\Desktop\Kodlar\OnlineLibrary\src\Core\OnlineLibrary.Domain\obj\Debug\net8.0\ref\OnlineLibrary.Domain.dll

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OnlineLibrary.Application.Interfaces.Repositories
 {
-    internal interface IReservedItemRepository: IRepository<ReservedItem>
+    public interface IReservedItemRepository: IRepository<ReservedItem>
     {
         
     }

@@ -1,0 +1,25 @@
+﻿using Microsoft.EntityFrameworkCore;
+using OnlineLibrary.Application.Interfaces.Repositories;
+using OnlineLibrary.Domain.Entitites;
+using OnlineLibrary.Persistence.DAL;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OnlineLibrary.Persistence.Implementations.Repositories
+{
+    public class AuthorRepository : GenericRepository<Author>, IAuthorRepository
+    {
+
+        public AuthorRepository(AppDbContext context) : base(context)
+        {
+
+        }
+        public List<Author> GetAllWithBooks()
+        {
+            return _table.Include(a => a.Books).ToList();
+        }
+    }
+}

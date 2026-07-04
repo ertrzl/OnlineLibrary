@@ -13,6 +13,8 @@ namespace OnlineLibrary.Domain.Entitites
         public int PageCount { get; set; }
         public  int AuthorId { get; set; }
 
+        public Author Author { get; set; }
+
         public List<ReservedItem> ReservedItems { get; set; } = new();
 
 
