@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OnlineLibrary.Persistence.Implementations.Services
 {
-    internal class AuthorService : IAuthorService
+    public class AuthorService : IAuthorService
     {
         private readonly IAuthorRepository _authors;
         public AuthorService(IAuthorRepository authors)
@@ -64,5 +64,22 @@ namespace OnlineLibrary.Persistence.Implementations.Services
 
             return authors;
         }
+        public Author GetByAuthorId(int id)
+        {
+            if (id <= 0)
+            {
+                throw new Exception("Error: ID cannot be zero or negative!");
+            }
+
+            var author = _authors.GetById(id, isTracking: false);
+
+            if (author == null)
+            {
+                throw new Exception($"Error: Author with ID {id} was not found!");
+            }
+
+            return author;
+        }
     }
 }
+

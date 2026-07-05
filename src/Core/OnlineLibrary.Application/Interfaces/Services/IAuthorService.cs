@@ -14,7 +14,9 @@ namespace OnlineLibrary.Application.Interfaces.Services
 
         List<Author> ShowAllAuthors();
 
-       
+        Author? GetByAuthorId(int id);
+
+
 
 
 

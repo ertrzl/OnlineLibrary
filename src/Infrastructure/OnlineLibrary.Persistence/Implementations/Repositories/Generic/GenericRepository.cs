@@ -32,7 +32,7 @@ namespace OnlineLibrary.Persistence.Implementations.Repositories;
             _table.Remove(entity);
         }
 
-        public List<T> GetAll()
+        public virtual List<T> GetAll()
         {
             return _table.AsNoTracking().ToList();
         }
@@ -40,7 +40,7 @@ namespace OnlineLibrary.Persistence.Implementations.Repositories;
         public T? GetById(int id, bool isTracking = false)
         {
 
-            if (!isTracking)
+            if (isTracking)
             {
                 return _table.FirstOrDefault(x => x.Id == id);
             }

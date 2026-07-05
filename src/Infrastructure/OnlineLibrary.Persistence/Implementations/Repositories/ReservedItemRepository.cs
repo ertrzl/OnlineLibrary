@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace OnlineLibrary.Persistence.Implementations.Repositories
 {
-    internal class ReservedItemRepository :GenericRepository<ReservedItem>, IReservedItemRepository
+    public class ReservedItemRepository : GenericRepository<ReservedItem>, IReservedItemRepository
     {
         public ReservedItemRepository(AppDbContext context) : base(context)
         {
@@ -19,6 +19,9 @@ namespace OnlineLibrary.Persistence.Implementations.Repositories
 
         public override List<ReservedItem> GetAll()
         {
-            return _table.Include(r => r.User).ToList();
+            return _table.OrderBy(r => r.FinCode).ToList();
         }
-}}
+
+        
+    }
+}

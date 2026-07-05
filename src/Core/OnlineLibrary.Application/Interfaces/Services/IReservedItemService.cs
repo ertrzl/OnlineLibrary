@@ -15,6 +15,8 @@ namespace OnlineLibrary.Application.Interfaces.Services
         void ChangeReservationStatus(int id, Status newStatus);
         List<ReservedItem> GetReservationsByFinCode(string finCode);
 
+        ReservedItem GetReservationById(int id);
+
 
     }
 }
