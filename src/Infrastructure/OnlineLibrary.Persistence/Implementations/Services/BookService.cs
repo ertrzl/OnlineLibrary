@@ -1,6 +1,7 @@
 ﻿using OnlineLibrary.Application.Interfaces.Repositories;
 using OnlineLibrary.Application.Interfaces.Services;
 using OnlineLibrary.Domain.Entitites;
+using OnlineLibrary.Domain.Enums;
 using OnlineLibrary.Persistence.Implementations.Repositories;
 using System;
 using System.Collections.Generic;
@@ -27,7 +28,7 @@ namespace OnlineLibrary.Persistence.Implementations.Services
             if (string.IsNullOrWhiteSpace(book.Name))
                 throw new Exception(" Book name cannot be empty!");
 
-            if (book.PageCount<=0)
+            if (book.PageCount <= 0)
                 throw new Exception("Page count must be greater than zero");
 
             var author = _authors.GetById(book.AuthorId, isTracking: false);
@@ -54,6 +55,11 @@ namespace OnlineLibrary.Persistence.Implementations.Services
             var book = _books.GetById(id, isTracking: true);
             if (book is null)
                 throw new Exception($"Error: Book with ID {id} was not found!");
+            var hasActiveReservation = _reservations.GetAll()
+                 .Any(r => r.BookId == id
+                       && (r.Status == Status.Confirmed || r.Status == Status.Started));
+            if (hasActiveReservation)
+                throw new Exception($"Error: Book with ID {id} cannot be deleted because it has active reservations!");
 
             _books.Delete(book);
             _books.SaveChanges();
