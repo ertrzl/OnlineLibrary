@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ManagementApp app = new ManagementApp();
+            app.Run();
         }
     }
 }
