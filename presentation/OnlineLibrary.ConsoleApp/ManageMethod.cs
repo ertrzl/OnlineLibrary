@@ -96,6 +96,29 @@ namespace OnlineLibrary.ConsoleApp
         }
         public void GetBookById()
         {
+            try
+            {
+                Console.WriteLine("=== AVAILABLE BOOKS ===");
+                var books = _bookService.GetAllBooksWithAuthor();
+                if (books == null || books.Count == 0)
+                {
+                    Console.WriteLine("No books found in the database.");
+                }
+                else
+                {
+                    foreach (var book in books)
+                    {
+                        string authorName = book.Author != null ? book.Author.Name : "No Author";
+                        Console.WriteLine($"ID: {book.Id} | Name: {book.Name} | Author: {authorName}");
+                    }
+                }
+                Console.WriteLine();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Service Error: {ex.Message}");
+            }
+
             while (true)
             {
                 Console.Write("Enter Book ID (or 'menu' to exit): ");
@@ -119,7 +142,7 @@ namespace OnlineLibrary.ConsoleApp
                     Console.WriteLine($"ID: {book.Id}");
                     Console.WriteLine($"Name: {book.Name}");
                     Console.WriteLine($"Page Count: {book.PageCount}");
-                    Console.WriteLine($"Author ID: {book.AuthorId}");
+                    Console.WriteLine($"Author Name: {book.Name}");
 
                     var history = _reservedService.GetAllReservationsOrderedByStatus()
                         .Where(r => r.BookId == id)
@@ -518,6 +541,30 @@ namespace OnlineLibrary.ConsoleApp
         }
         public void ChangeReservationStatus()
         {
+            try
+            {
+                Console.WriteLine("=== RESERVATIONS THAT CAN BE MODIFIED ===");
+                var allReservations = _reservedService.GetAllReservationsOrderedByStatus()
+                    .Where(r => r.Status != Status.Completed && r.Status != Status.Canceled)
+                    .ToList();
+                if (allReservations.Count == 0)
+                {
+                    Console.WriteLine("No modifiable reservations found in the database.");
+                }
+                else
+                {
+                    foreach (var res in allReservations)
+                    {
+                        Console.WriteLine($"ReservationId: {res.Id} | Book ID: {res.BookId} | FIN: {res.FinCode} | Status: {res.Status} | From: {res.StartDate.ToShortDateString()} To: {res.EndDate.ToShortDateString()}");
+                    }
+                }
+                Console.WriteLine();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Service Error: {ex.Message}");
+            }
+
             while (true)
             {
                 Console.Write("Enter Reservation ID to change status (or 'menu' to exit): ");
@@ -601,6 +648,31 @@ namespace OnlineLibrary.ConsoleApp
         }
         public void ShowUserReservations()
         {
+            try
+            {
+                Console.WriteLine("=== USERS WITH RESERVATIONS ===");
+                var finCodes = _reservedService.GetAllReservationsOrderedByStatus()
+                    .Select(r => r.FinCode)
+                    .Distinct()
+                    .ToList();
+                if (finCodes.Count == 0)
+                {
+                    Console.WriteLine("No users found in the database.");
+                }
+                else
+                {
+                    foreach (var fin in finCodes)
+                    {
+                        Console.WriteLine($"FIN: {fin}");
+                    }
+                }
+                Console.WriteLine();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Service Error: {ex.Message}");
+            }
+
             while (true)
             {
                 Console.Write("Enter FinCode to view reservations (7 characters, or 'menu' to exit): ");
