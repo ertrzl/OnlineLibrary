@@ -1,4 +1,5 @@
 ﻿using OnlineLibrary.Domain.Entitites;
+using OnlineLibrary.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,8 @@ namespace OnlineLibrary.Application.Interfaces.Services
         List<Author> ShowAllAuthors();
 
         Author? GetByAuthorId(int id);
+
+        List<Author> GetAuthorsByGender(Gender gender);
 
 
 

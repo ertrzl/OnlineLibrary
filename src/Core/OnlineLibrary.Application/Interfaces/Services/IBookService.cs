@@ -14,7 +14,7 @@ namespace OnlineLibrary.Application.Interfaces.Services
         Book? GetBookById(int id);
         List<Book> GetAll();
         List<Book> GetAllBooksWithAuthor();
-        List<Book> GetBooksByAuthorId(int authorId);
+        
 
     }
 }

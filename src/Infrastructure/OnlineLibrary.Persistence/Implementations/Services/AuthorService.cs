@@ -1,11 +1,8 @@
 ﻿using OnlineLibrary.Application.Interfaces.Repositories;
 using OnlineLibrary.Application.Interfaces.Services;
 using OnlineLibrary.Domain.Entitites;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using OnlineLibrary.Domain.Enums;
+
 
 namespace OnlineLibrary.Persistence.Implementations.Services
 {
@@ -78,6 +75,13 @@ namespace OnlineLibrary.Persistence.Implementations.Services
             }
 
             return author;
+        }
+
+        public List<Author> GetAuthorsByGender(Gender gender)
+        {
+            return _authors.GetAllWithBooks()
+                .Where(a => a.Gender == gender)
+                .ToList();
         }
     }
 }

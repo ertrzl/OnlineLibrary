@@ -46,6 +46,7 @@ namespace OnlineLibrary.ConsoleApp
                 Console.WriteLine("9. Reservation List");
                 Console.WriteLine("10. Change Reservation Status");
                 Console.WriteLine("11. Show User Reservations");
+                Console.WriteLine("12. Filter Authors by Gender");
 
                 Console.WriteLine("0. Exit");
                 
@@ -124,6 +125,12 @@ namespace OnlineLibrary.ConsoleApp
                     case "11":
                         Console.Clear();
                         _manage.ShowUserReservations();
+                        Console.WriteLine("\nPress Enter to return to main menu...");
+                        Console.ReadLine();
+                        break;
+                    case "12":
+                        Console.Clear();
+                        _manage.FilterAuthorsByGender();
                         Console.WriteLine("\nPress Enter to return to main menu...");
                         Console.ReadLine();
                         break;

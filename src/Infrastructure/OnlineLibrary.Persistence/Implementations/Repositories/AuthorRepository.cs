@@ -2,11 +2,6 @@
 using OnlineLibrary.Application.Interfaces.Repositories;
 using OnlineLibrary.Domain.Entitites;
 using OnlineLibrary.Persistence.DAL;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OnlineLibrary.Persistence.Implementations.Repositories
 {
@@ -24,12 +19,12 @@ namespace OnlineLibrary.Persistence.Implementations.Repositories
 
         public Author? GetByIdWithBooks(int id, bool isTracking = false)
         {
-            {
-                var query = _table.Include(a => a.Books).Where(a => a.Id == id);
-                if (!isTracking)
-                    query = query.AsNoTracking();
-                return query.FirstOrDefault();
-            }
+            var query = _table.Include(a => a.Books).Where(a => a.Id == id);
+            if (!isTracking)
+                query = query.AsNoTracking();
+            return query.FirstOrDefault();
         }
+
+
     }
 }

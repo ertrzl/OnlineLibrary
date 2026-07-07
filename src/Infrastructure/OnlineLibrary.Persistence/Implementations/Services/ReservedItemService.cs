@@ -2,12 +2,6 @@
 using OnlineLibrary.Application.Interfaces.Services;
 using OnlineLibrary.Domain.Entitites;
 using OnlineLibrary.Domain.Enums;
-using OnlineLibrary.Persistence.Implementations.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OnlineLibrary.Persistence.Implementations.Services
 {
@@ -35,6 +29,8 @@ namespace OnlineLibrary.Persistence.Implementations.Services
                 throw new Exception("Error: A 'Confirmed' reservation must be 'Started' before it can be 'Completed'!");
             if (reservation.Status == Status.Started && newStatus == Status.Confirmed)
                 throw new Exception("Error: A 'Started' reservation cannot go back to 'Confirmed'!");
+            if (reservation.Status == newStatus)
+                throw new Exception($"Error: Reservation is already '{newStatus}'. No change made!");
 
             reservation.Status = newStatus;
             _reservedItems.Update(reservation);
@@ -45,7 +41,7 @@ namespace OnlineLibrary.Persistence.Implementations.Services
         {
             return _reservedItems.GetAll()
             .OrderBy(r => r.Status)
-              .ToList();
+            .ToList();
         }
         public ReservedItem GetReservationById(int id)
         {

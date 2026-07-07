@@ -2,12 +2,7 @@
 using OnlineLibrary.Application.Interfaces.Repositories;
 using OnlineLibrary.Domain.Entitites;
 using OnlineLibrary.Persistence.DAL;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace OnlineLibrary.Persistence.Implementations.Repositories;
     public class GenericRepository<T> : IRepository<T> where T : BaseEntity, new()

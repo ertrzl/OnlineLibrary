@@ -2,12 +2,6 @@
 using OnlineLibrary.Application.Interfaces.Services;
 using OnlineLibrary.Domain.Entitites;
 using OnlineLibrary.Domain.Enums;
-using OnlineLibrary.Persistence.Implementations.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OnlineLibrary.Persistence.Implementations.Services
 {
@@ -87,16 +81,6 @@ namespace OnlineLibrary.Persistence.Implementations.Services
             return book;
         }
 
-        public List<Book> GetBooksByAuthorId(int authorId)
-        {
-            if (authorId <= 0)
-                throw new Exception("Error: Author ID cannot be zero or negative!");
-
-            var authorBooks = _books.GetAll()
-             .Where(b => b.AuthorId == authorId)
-             .ToList();
-
-            return authorBooks;
-        }
+       
     }
 }

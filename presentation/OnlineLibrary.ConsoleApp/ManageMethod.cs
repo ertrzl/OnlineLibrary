@@ -243,12 +243,64 @@ namespace OnlineLibrary.ConsoleApp
                 foreach (var author in authors)
                 {
                     int bookCount = author.Books != null ? author.Books.Count : 0;
-                    Console.WriteLine($"ID: {author.Id} | Name: {author.Name} | Total Books: {bookCount}");
+                    Console.WriteLine($"ID: {author.Id} | Name: {author.Name} | Gender: {author.Gender} | Total Books: {bookCount}");
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Service Error: {ex.Message}");
+            }
+        }
+        public void FilterAuthorsByGender()
+        {
+            while (true)
+            {
+                Console.WriteLine("Select Gender to filter by (or 'menu' to exit):");
+                Console.WriteLine("1. Male");
+                Console.WriteLine("2. Female");
+                Console.WriteLine("3. Other");
+                Console.Write("Your choice: ");
+
+                string input = Console.ReadLine()?.Trim();
+
+                if (input?.ToLower() == "menu")
+                {
+                    Console.WriteLine("Returning to menu...");
+                    return;
+                }
+
+                if (!int.TryParse(input, out int genderChoice) || genderChoice < 1 || genderChoice > 3)
+                {
+                    Console.WriteLine("Error: Please select a valid gender option! Try again.\n");
+                    continue;
+                }
+
+                Gender selectedGender = (Gender)genderChoice;
+
+                try
+                {
+                    var authors = _authorService.GetAuthorsByGender(selectedGender);
+
+                    Console.WriteLine($"\n=== AUTHORS WITH GENDER: {selectedGender} ===");
+
+                    if (authors == null || authors.Count == 0)
+                    {
+                        Console.WriteLine("No authors found with this gender.");
+                    }
+                    else
+                    {
+                        foreach (var author in authors)
+                        {
+                            int bookCount = author.Books != null ? author.Books.Count : 0;
+                            Console.WriteLine($"ID: {author.Id} | Name: {author.Name} | Total Books: {bookCount}");
+                        }
+                    }
+                    break;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"\nService Error: {ex.Message} Try again.\n");
+                }
             }
         }
         public void ShowAuthorsBooks()
@@ -298,6 +350,44 @@ namespace OnlineLibrary.ConsoleApp
         }
         public void ReserveBook()
         {
+            try
+            {
+                Console.WriteLine("=== AVAILABLE AUTHORS ===");
+                var authors = _authorService.ShowAllAuthors();
+                if (authors == null || authors.Count == 0)
+                {
+                    Console.WriteLine("No authors found in the database.");
+                }
+                else
+                {
+                    foreach (var author in authors)
+                    {
+                        string fullName = string.IsNullOrWhiteSpace(author.Surname) ? author.Name : $"{author.Name} {author.Surname}";
+                        Console.WriteLine($"ID: {author.Id} | Name: {fullName}");
+                    }
+                }
+
+                Console.WriteLine("\n=== AVAILABLE BOOKS ===");
+                var books = _bookService.GetAllBooksWithAuthor();
+                if (books == null || books.Count == 0)
+                {
+                    Console.WriteLine("No books found in the database.");
+                }
+                else
+                {
+                    foreach (var book in books)
+                    {
+                        string authorName = book.Author != null ? book.Author.Name : "No Author";
+                        Console.WriteLine($"ID: {book.Id} | Name: {book.Name} | Author: {authorName}");
+                    }
+                }
+                Console.WriteLine();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Service Error: {ex.Message}");
+            }
+
             while (true)
             {
                 int bookId;
@@ -347,8 +437,8 @@ namespace OnlineLibrary.ConsoleApp
                     }
                     break;
                 }
-
                 DateTime startDate;
+
                 while (true)
                 {
                     Console.Write("Enter Start Date:");
@@ -418,7 +508,7 @@ namespace OnlineLibrary.ConsoleApp
                 }
                 foreach (var res in reservations)
                 {
-                    Console.WriteLine($"Book ID: {res.BookId} | FIN: {res.FinCode} | Status: {res.Status} | From: {res.StartDate.ToShortDateString()} To: {res.EndDate.ToShortDateString()}");
+                    Console.WriteLine($"ReservationId: {res.Id} | Book ID: {res.BookId} | FIN: {res.FinCode} | Status: {res.Status} | From: {res.StartDate.ToShortDateString()} To: {res.EndDate.ToShortDateString()}");
                 }
             }
             catch (Exception ex)
@@ -429,7 +519,7 @@ namespace OnlineLibrary.ConsoleApp
         public void ChangeReservationStatus()
         {
             while (true)
-            { 
+            {
                 Console.Write("Enter Reservation ID to change status (or 'menu' to exit): ");
                 string input = Console.ReadLine()?.Trim();
 
@@ -485,6 +575,11 @@ namespace OnlineLibrary.ConsoleApp
                     if (currentReservation.Status == Status.Started && newStatus == Status.Confirmed)
                     {
                         Console.WriteLine("Error: A 'Started' reservation cannot go back to 'Confirmed'!\n");
+                        continue;
+                    }
+                    if (currentReservation.Status == newStatus)
+                    {
+                        Console.WriteLine($"Error: Reservation is already '{newStatus}'. No change made!\n");
                         continue;
                     }
                     _reservedService.ChangeReservationStatus(reservationId, newStatus);
