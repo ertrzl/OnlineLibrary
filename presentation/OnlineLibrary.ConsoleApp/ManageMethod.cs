@@ -52,14 +52,6 @@ namespace OnlineLibrary.ConsoleApp
 
                 try
                 {
-
-                    var author = _authorService.GetByAuthorId(authorId);
-                    if (author == null)
-                    {
-                        Console.WriteLine($"Error: Author with ID {authorId} does not exist! Try again.\n");
-                        continue;
-                    }
-
                     var newBook = new Book { Name = name, PageCount = pageCount, AuthorId = authorId };
                     _bookService.CreateBook(newBook);
                     Console.WriteLine("Book created successfully!");
@@ -308,69 +300,88 @@ namespace OnlineLibrary.ConsoleApp
         {
             while (true)
             {
-                Console.Write("Enter Book ID to reserve (or 'menu' to exit): ");
-                string bookInput = Console.ReadLine()?.Trim();
+                int bookId;
+                while (true)
+                {
+                    Console.Write("Enter Book ID to reserve (or 'menu' to exit): ");
+                    string bookInput = Console.ReadLine()?.Trim();
 
-                if (bookInput?.ToLower() == "menu")
-                {
-                    Console.WriteLine("Returning to menu...");
-                    return;
-                }
-
-                if (!int.TryParse(bookInput, out int bookId) || bookId <= 0)
-                {
-                    Console.WriteLine("Error: Please enter a valid book ID! Try again.\n");
-                    continue;
-                }
-                Console.Write("Enter your FinCode: ");
-                string finCode = Console.ReadLine()?.Trim().ToUpper();
-
-                if (string.IsNullOrWhiteSpace(finCode))
-                {
-                    Console.WriteLine("Error: FinCode cannot be empty! Try again.\n");
-                    continue;
-                }
-                if (string.IsNullOrWhiteSpace(finCode) || finCode.Length != 7)
-                {
-                    Console.WriteLine("Error: Invalid FinCode! FinCode must be exactly 7 characters long. Try again.\n");
-                    continue;
-                }
-                var allReservations = _reservedService.GetAllReservationsOrderedByStatus();
-                int activeReservationsCount = 0;
-                foreach (var res in allReservations)
-                {
-                    if (res.FinCode == finCode && res.Status.ToString() == "Active")
+                    if (bookInput?.ToLower() == "menu")
                     {
-                        activeReservationsCount++;
+                        Console.WriteLine("Returning to menu...");
+                        return;
                     }
+
+                    if (!int.TryParse(bookInput, out bookId) || bookId <= 0)
+                    {
+                        Console.WriteLine("Error: Please enter a valid book ID! Try again.\n");
+                        continue;
+                    }
+                    break;
                 }
-                if (activeReservationsCount >= 3)
+
+                string finCode;
+                while (true)
                 {
-                    Console.WriteLine($"Error: FinCode '{finCode}' already has {activeReservationsCount} active reservations. Maximum allowed is 3!\n");
-                    continue;
+                    Console.Write("Enter your FinCode: ");
+                    finCode = Console.ReadLine()?.Trim().ToUpper();
+
+                    if (string.IsNullOrWhiteSpace(finCode) || finCode.Length != 7)
+                    {
+                        Console.WriteLine("Error: Invalid FinCode! FinCode must be exactly 7 characters long. Try again.\n");
+                        continue;
+                    }
+                    var allReservations = _reservedService.GetAllReservationsOrderedByStatus();
+                    int activeReservationsCount = 0;
+                    foreach (var res in allReservations)
+                    {
+                        if (res.FinCode == finCode && (res.Status == Status.Confirmed || res.Status == Status.Started))
+                        {
+                            activeReservationsCount++;
+                        }
+                    }
+                    if (activeReservationsCount >= 3)
+                    {
+                        Console.WriteLine($"Error: FinCode '{finCode}' already has {activeReservationsCount} active reservations. Maximum allowed is 3!\n");
+                        continue;
+                    }
+                    break;
                 }
-                Console.Write("Enter Start Date:");
-                if (!DateTime.TryParse(Console.ReadLine(), out DateTime startDate))
+
+                DateTime startDate;
+                while (true)
                 {
-                    Console.WriteLine("Error: Invalid Start Date format! Try again.\n");
-                    continue;
+                    Console.Write("Enter Start Date:");
+                    if (!DateTime.TryParse(Console.ReadLine(), out startDate))
+                    {
+                        Console.WriteLine("Error: Invalid Start Date format! Try again.\n");
+                        continue;
+                    }
+                    if (startDate.Date < DateTime.Today)
+                    {
+                        Console.WriteLine("Error: Start Date cannot be in the past! Try again.\n");
+                        continue;
+                    }
+                    break;
                 }
-                if (startDate.Date < DateTime.Today)
+
+                DateTime endDate;
+                while (true)
                 {
-                    Console.WriteLine("Error: Start Date cannot be in the past! Try again.\n");
-                    continue;
+                    Console.Write("Enter End Date:");
+                    if (!DateTime.TryParse(Console.ReadLine(), out endDate))
+                    {
+                        Console.WriteLine("Error: Invalid End Date format! Try again.\n");
+                        continue;
+                    }
+                    if (endDate.Date <= startDate.Date)
+                    {
+                        Console.WriteLine("Error: End Date must be after the Start Date! Try again.\n");
+                        continue;
+                    }
+                    break;
                 }
-                Console.Write("Enter End Date:");
-                if (!DateTime.TryParse(Console.ReadLine(), out DateTime endDate))
-                {
-                    Console.WriteLine("Error: Invalid End Date format! Try again.\n");
-                    continue;
-                }
-                if (endDate.Date <= startDate.Date)
-                {
-                    Console.WriteLine("Error: End Date must be after the Start Date! Try again.\n");
-                    continue;
-                }
+
                 try
                 {
                     ReservedItem newReservation = new ReservedItem
@@ -378,8 +389,7 @@ namespace OnlineLibrary.ConsoleApp
                         BookId = bookId,
                         FinCode = finCode,
                         StartDate = startDate,
-                        EndDate = endDate,
-                        Status = Status.Started
+                        EndDate = endDate
                     };
                     _reservedService.ReserveBook(newReservation);
 
@@ -395,7 +405,7 @@ namespace OnlineLibrary.ConsoleApp
         }
         public void ShowReservationList()
         {
-            Console.WriteLine("=== RESERVATION LIST (ORDERED BY STATUS) ===");
+            Console.WriteLine("=== RESERVATION LIST  ===");
 
             try
             {
@@ -444,7 +454,7 @@ namespace OnlineLibrary.ConsoleApp
                     if (currentReservation.Status == Status.Completed || currentReservation.Status == Status.Canceled)
                     {
                         Console.WriteLine($"Error: This reservation is already {currentReservation.Status}. Finished reservations cannot be modified!\n");
-                        return; 
+                        continue;
                     }
 
                     Console.WriteLine("\nSelect New Status:");
@@ -470,6 +480,11 @@ namespace OnlineLibrary.ConsoleApp
                     if (currentReservation.Status == Status.Confirmed && newStatus == Status.Completed)
                     {
                         Console.WriteLine("Error: A 'Confirmed' reservation must be 'Started' before it can be 'Completed'!\n");
+                        continue;
+                    }
+                    if (currentReservation.Status == Status.Started && newStatus == Status.Confirmed)
+                    {
+                        Console.WriteLine("Error: A 'Started' reservation cannot go back to 'Confirmed'!\n");
                         continue;
                     }
                     _reservedService.ChangeReservationStatus(reservationId, newStatus);

@@ -75,7 +75,7 @@ namespace OnlineLibrary.Persistence.Implementations.Services
             return _books.GetBooksWithAuthors();
         }
 
-        public Book GetBookById(int id, bool withDate = false)
+        public Book GetBookById(int id)
         {
             if (id <= 0)
                 throw new Exception("Error: ID cannot be zero!");
@@ -90,7 +90,7 @@ namespace OnlineLibrary.Persistence.Implementations.Services
         public List<Book> GetBooksByAuthorId(int authorId)
         {
             if (authorId <= 0)
-                throw new Exception("Error: Author ID cannot be!");
+                throw new Exception("Error: Author ID cannot be zero or negative!");
 
             var authorBooks = _books.GetAll()
              .Where(b => b.AuthorId == authorId)

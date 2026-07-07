@@ -21,5 +21,15 @@ namespace OnlineLibrary.Persistence.Implementations.Repositories
         {
             return _table.Include(a => a.Books).ToList();
         }
+
+        public Author? GetByIdWithBooks(int id, bool isTracking = false)
+        {
+            {
+                var query = _table.Include(a => a.Books).Where(a => a.Id == id);
+                if (!isTracking)
+                    query = query.AsNoTracking();
+                return query.FirstOrDefault();
+            }
+        }
     }
 }

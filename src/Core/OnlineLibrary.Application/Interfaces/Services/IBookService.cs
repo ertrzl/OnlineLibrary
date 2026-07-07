@@ -11,7 +11,7 @@ namespace OnlineLibrary.Application.Interfaces.Services
     {
         void CreateBook(Book book);
         void DeleteBook(int id);
-        Book? GetBookById(int id, bool withDate = false);
+        Book? GetBookById(int id);
         List<Book> GetAll();
         List<Book> GetAllBooksWithAuthor();
         List<Book> GetBooksByAuthorId(int authorId);

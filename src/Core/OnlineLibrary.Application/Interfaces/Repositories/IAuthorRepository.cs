@@ -10,5 +10,6 @@ namespace OnlineLibrary.Application.Interfaces.Repositories
     public interface IAuthorRepository: IRepository<Author>
     {
         List<Author> GetAllWithBooks();
+        Author? GetByIdWithBooks(int id, bool isTracking = false);
     }
 }

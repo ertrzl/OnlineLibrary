@@ -24,14 +24,17 @@ namespace OnlineLibrary.Persistence.Implementations.Services
 
         public void ChangeReservationStatus(int id, Status newStatus)
         {
-            var reservation = _reservedItems.GetById(id);
+            var reservation = _reservedItems.GetById(id, isTracking: true);
             if (reservation is null)
                 throw new Exception($"Reservation with ID {id} not found!");
             if (reservation.Status == Status.Completed)
                 throw new Exception("Error: Cannot change status of a completed reservation!");
             if (reservation.Status == Status.Canceled)
                 throw new Exception("Error: Cannot change status of a canceled reservation!");
-
+            if (reservation.Status == Status.Confirmed && newStatus == Status.Completed)
+                throw new Exception("Error: A 'Confirmed' reservation must be 'Started' before it can be 'Completed'!");
+            if (reservation.Status == Status.Started && newStatus == Status.Confirmed)
+                throw new Exception("Error: A 'Started' reservation cannot go back to 'Confirmed'!");
 
             reservation.Status = newStatus;
             _reservedItems.Update(reservation);
@@ -78,6 +81,18 @@ namespace OnlineLibrary.Persistence.Implementations.Services
 
         public void ReserveBook(ReservedItem item)
         {
+            if (item is null)
+                throw new Exception("Error: Reservation item cannot be null!");
+            if (string.IsNullOrWhiteSpace(item.FinCode))
+                throw new Exception("Error: FIN code cannot be empty!");
+            if (item.FinCode.Length != 7)
+                throw new Exception("Error: FIN code must be exactly 7 characters long.");
+            if (item.StartDate < DateTime.Now.Date)
+                throw new Exception("Error: Start date cannot be in the past!");
+            if (item.EndDate <= item.StartDate)
+                throw new Exception("Error: End date must be after the start date!");
+            if (item.Status == Status.Completed)
+                throw new InvalidOperationException("Cannot modify a reservation that is already completed.");
 
             var book = _bookRepository.GetById(item.BookId);
             if (book is null)
@@ -91,20 +106,8 @@ namespace OnlineLibrary.Persistence.Implementations.Services
             if (!isBookAvailable)
                 throw new Exception($"Error: Book with ID {item.BookId} is already reserved for the selected dates!");
 
-
-            if (item is null)
-                throw new Exception("Error: Reservation item cannot be null!");
-            if (string.IsNullOrWhiteSpace(item.FinCode))
-                throw new Exception("Error: FIN code cannot be empty!");
-            if (item.StartDate < DateTime.Now.Date)
-                throw new Exception("Error: Start date cannot be in the past!");
-            if (item.EndDate <= item.StartDate)
-                throw new Exception("Error: End date must be after the start date!");
-            if (item.Status == Status.Completed)
-                throw new InvalidOperationException("Cannot modify a reservation that is already completed.");
-
             var activeReservationsCount = _reservedItems.GetAll()
-        .Count(r => r.FinCode == item.FinCode && (r.Status == Status.Completed || r.Status == Status.Started));
+        .Count(r => r.FinCode == item.FinCode && (r.Status == Status.Confirmed || r.Status == Status.Started));
             if (activeReservationsCount >= 3)
                 throw new Exception("Error: User with this FIN code already has 3 active reservations!");
             item.Status = Status.Confirmed;

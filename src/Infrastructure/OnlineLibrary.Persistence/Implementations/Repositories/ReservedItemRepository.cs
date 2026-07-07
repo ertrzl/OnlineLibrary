@@ -16,12 +16,5 @@ namespace OnlineLibrary.Persistence.Implementations.Repositories
         public ReservedItemRepository(AppDbContext context) : base(context)
         {
         }
-
-        public override List<ReservedItem> GetAll()
-        {
-            return _table.OrderBy(r => r.FinCode).ToList();
-        }
-
-        
     }
 }

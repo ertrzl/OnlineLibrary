@@ -29,7 +29,7 @@ namespace OnlineLibrary.Persistence.Implementations.Services
 
             var isDuplicate = _authors.GetAll()
             .Any(a => a.Name.ToLower() == author.Name.ToLower() &&
-                      a.Surname == author.Surname);
+                      a.Surname?.ToLower() == author.Surname?.ToLower());
 
             if (isDuplicate)
             {
@@ -46,12 +46,11 @@ namespace OnlineLibrary.Persistence.Implementations.Services
             if (id <= 0)
                 throw new Exception("Error: ID cannot be zero!");
 
-            var author = _authors.GetById(id, isTracking: true);
+            var author = _authors.GetByIdWithBooks(id, isTracking: true);
             if (author == null)
                 throw new Exception("Author not found!");
 
-            var hasBooks = _authors.GetById(id).Books?.Any() ?? false;
-            if (hasBooks)
+            if (author.Books != null && author.Books.Any())
                 throw new Exception("Conflict Error: Cannot delete this author because they have associated books!");
 
             _authors.Delete(author);
@@ -71,7 +70,7 @@ namespace OnlineLibrary.Persistence.Implementations.Services
                 throw new Exception("Error: ID cannot be zero or negative!");
             }
 
-            var author = _authors.GetById(id, isTracking: false);
+            var author = _authors.GetByIdWithBooks(id, isTracking: false);
 
             if (author == null)
             {
