@@ -9,11 +9,11 @@ namespace OnlineLibrary.Domain.Entitites
 {
     public class Book:BaseEntity
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         public int PageCount { get; set; }
         public  int AuthorId { get; set; }
 
-        public Author Author { get; set; }
+        public Author Author { get; set; } = null!;
 
         public List<ReservedItem> ReservedItems { get; set; } = new();
 

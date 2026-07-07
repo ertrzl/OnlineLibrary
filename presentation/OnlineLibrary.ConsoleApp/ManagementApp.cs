@@ -51,7 +51,7 @@ namespace OnlineLibrary.ConsoleApp
                 Console.WriteLine("0. Exit");
                 
                 Console.Write("\nSelect an option: ");
-                string choice = Console.ReadLine()?.Trim();
+                string? choice = Console.ReadLine()?.Trim();
 
                 if (string.IsNullOrWhiteSpace(choice))
                     continue;

@@ -15,7 +15,7 @@ namespace OnlineLibrary.Application.Interfaces.Services
 
         List<Author> ShowAllAuthors();
 
-        Author? GetByAuthorId(int id);
+        Author GetByAuthorId(int id);
 
         List<Author> GetAuthorsByGender(Gender gender);
 

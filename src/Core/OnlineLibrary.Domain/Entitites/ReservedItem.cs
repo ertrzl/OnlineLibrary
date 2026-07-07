@@ -10,11 +10,11 @@ namespace OnlineLibrary.Domain.Entitites
 {
     public class ReservedItem:BaseEntity
     {
-        public string FinCode { get; set; } 
+        public string FinCode { get; set; } = string.Empty;
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public Status Status { get; set; }
         public int BookId { get; set; }
-        public Book Book { get; set; } 
+        public Book Book { get; set; } = null!;
     }
 }

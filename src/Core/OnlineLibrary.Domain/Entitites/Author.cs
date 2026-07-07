@@ -5,7 +5,7 @@ namespace OnlineLibrary.Domain.Entitites
 {
     public class Author: BaseEntity
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         public string? Surname { get; set; }
         public Gender Gender { get; set; }
 

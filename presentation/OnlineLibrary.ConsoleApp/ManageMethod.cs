@@ -27,7 +27,7 @@ namespace OnlineLibrary.ConsoleApp
             while (true)
             {
                 Console.Write("Enter Book Name (or 'menu' to exit): ");
-                string name = Console.ReadLine()?.Trim();
+                string? name = Console.ReadLine()?.Trim();
                 if (name?.ToLower() == "menu") return;
 
                 if (string.IsNullOrWhiteSpace(name))
@@ -68,7 +68,7 @@ namespace OnlineLibrary.ConsoleApp
             while (true)
             {
                 Console.Write("Enter the ID of the book you want to delete (or 'menu' to exit): ");
-                string input = Console.ReadLine()?.Trim();
+                string? input = Console.ReadLine()?.Trim();
 
                 if (input?.ToLower() == "menu")
                 {
@@ -99,7 +99,7 @@ namespace OnlineLibrary.ConsoleApp
             while (true)
             {
                 Console.Write("Enter Book ID (or 'menu' to exit): ");
-                string input = Console.ReadLine()?.Trim();
+                string? input = Console.ReadLine()?.Trim();
 
                 if (input?.ToLower() == "menu")
                 {
@@ -176,7 +176,7 @@ namespace OnlineLibrary.ConsoleApp
             while (true)
             {
                 Console.Write("Enter Author Name (or 'menu' to exit): ");
-                string name = Console.ReadLine()?.Trim();
+                string? name = Console.ReadLine()?.Trim();
 
                 if (name?.ToLower() == "menu")
                 {
@@ -191,8 +191,8 @@ namespace OnlineLibrary.ConsoleApp
                 }
 
                 Console.Write("Enter Author Surname (Press Enter to skip): ");
-                string surnameInput = Console.ReadLine()?.Trim();
-                string surname = string.IsNullOrWhiteSpace(surnameInput) ? null : surnameInput;
+                string? surnameInput = Console.ReadLine()?.Trim();
+                string? surname = string.IsNullOrWhiteSpace(surnameInput) ? null : surnameInput;
 
                 Console.WriteLine("Select Gender:");
                 Console.WriteLine("1. Male");
@@ -261,7 +261,7 @@ namespace OnlineLibrary.ConsoleApp
                 Console.WriteLine("3. Other");
                 Console.Write("Your choice: ");
 
-                string input = Console.ReadLine()?.Trim();
+                string? input = Console.ReadLine()?.Trim();
 
                 if (input?.ToLower() == "menu")
                 {
@@ -308,7 +308,7 @@ namespace OnlineLibrary.ConsoleApp
             while (true)
             {
                 Console.Write("Enter Author ID (or 'menu' to exit): ");
-                string input = Console.ReadLine()?.Trim();
+                string? input = Console.ReadLine()?.Trim();
 
                 if (input?.ToLower() == "menu")
                 {
@@ -394,7 +394,7 @@ namespace OnlineLibrary.ConsoleApp
                 while (true)
                 {
                     Console.Write("Enter Book ID to reserve (or 'menu' to exit): ");
-                    string bookInput = Console.ReadLine()?.Trim();
+                    string? bookInput = Console.ReadLine()?.Trim();
 
                     if (bookInput?.ToLower() == "menu")
                     {
@@ -410,7 +410,7 @@ namespace OnlineLibrary.ConsoleApp
                     break;
                 }
 
-                string finCode;
+                string? finCode;
                 while (true)
                 {
                     Console.Write("Enter your FinCode: ");
@@ -521,7 +521,7 @@ namespace OnlineLibrary.ConsoleApp
             while (true)
             {
                 Console.Write("Enter Reservation ID to change status (or 'menu' to exit): ");
-                string input = Console.ReadLine()?.Trim();
+                string? input = Console.ReadLine()?.Trim();
 
                 if (input?.ToLower() == "menu")
                 {
@@ -554,7 +554,7 @@ namespace OnlineLibrary.ConsoleApp
                     Console.WriteLine("4. Canceled (Order Cancelled)");
                     Console.Write("Your choice: ");
 
-                    string statusChoice = Console.ReadLine()?.Trim();
+                    string? statusChoice = Console.ReadLine()?.Trim();
                     Status newStatus;
 
                     if (statusChoice == "1") newStatus = Status.Confirmed;
@@ -604,7 +604,7 @@ namespace OnlineLibrary.ConsoleApp
             while (true)
             {
                 Console.Write("Enter FinCode to view reservations (7 characters, or 'menu' to exit): ");
-                string finCode = Console.ReadLine()?.Trim().ToUpper();
+                string? finCode = Console.ReadLine()?.Trim().ToUpper();
 
                 if (finCode == "MENU") return;
 
