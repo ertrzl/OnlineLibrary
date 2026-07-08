@@ -99,14 +99,14 @@ namespace OnlineLibrary.ConsoleApp
             try
             {
                 Console.WriteLine("=== AVAILABLE BOOKS ===");
-                var books = _bookService.GetAllBooksWithAuthor();
+                List<Book> books = _bookService.GetAllBooksWithAuthor();
                 if (books == null || books.Count == 0)
                 {
                     Console.WriteLine("No books found in the database.");
                 }
                 else
                 {
-                    foreach (var book in books)
+                    foreach (Book book in books)
                     {
                         string authorName = book.Author != null ? book.Author.Name : "No Author";
                         Console.WriteLine($"ID: {book.Id} | Name: {book.Name} | Author: {authorName}");
@@ -142,7 +142,7 @@ namespace OnlineLibrary.ConsoleApp
                     Console.WriteLine($"ID: {book.Id}");
                     Console.WriteLine($"Name: {book.Name}");
                     Console.WriteLine($"Page Count: {book.PageCount}");
-                    Console.WriteLine($"Author Name: {book.Name}");
+                    
 
                     var history = _reservedService.GetAllReservationsOrderedByStatus()
                         .Where(r => r.BookId == id)
